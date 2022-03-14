@@ -29,7 +29,7 @@ namespace NotificacaoAzuereFunction
 
             HttpClient client = new HttpClient(clientHandler);
 
-            dynamic jsonObject = new {};
+            dynamic jsonObject = new {msg: "Estado do Paciente atual: Estável"};
 
             var content = new StringContent(jsonObject.ToString(), Encoding.UTF8, "application/json");
 
